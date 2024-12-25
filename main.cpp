@@ -65,7 +65,7 @@ void correctSentence(NGramFrequency &ngramFrequency, Trie &trie, const string &i
         lastChar = c;
     }
 
-    cout << "Corrected Sentence: " << normalizedSentence << endl;
+    cout << normalizedSentence << endl;
 }
 
 int main()
@@ -81,7 +81,6 @@ int main()
     }
 
     string input;
-    cout << "Enter a sentence to check: ";
     getline(cin, input);
 
     correctSentence(ngramFrequency, trie, input);
